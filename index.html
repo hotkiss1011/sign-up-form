@@ -7,34 +7,53 @@
   
   <link rel="stylesheet" href="src/index.css">
 
-  <title>Odin Sign Up Form</title>
+  <title>Sign Up Form</title>
 </head>
 <body>
   <div class="sidebar">
-    <h1><img src="images/odin-lined.png" alt="Odin Logo" class="odin-logo"> Odin</h1>
-    <p>Photo by <a href="https://unsplash.com/@brookecagle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Cagle</a> on <a href="https://unsplash.com/s/photos/people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    <h1><img src="images/odin-lined.png" alt="Odin Logo" class="logo"> Hotkiss Coding</h1>
+    <p class="caption">Photo by <a href="https://unsplash.com/@cdr6934?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Ried</a> on <a href="https://unsplash.com/s/photos/people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
   </div>
   <div class="content">
     <div class="header">
       <h2>This is not a real online service! Sign up <em>now</em> to get started.
       <br>
-      You know you want to.</h2>
+      <br>
+      You know you want to!</h2>
     </div>
     <div class="form">
-      <p>Let's do this!</p>
-      <form action="post">
-        <label for="firstName">FIRST NAME</label>
-        <input type="text" name="firstName" id="firstName">
-        <label for="lastName">LAST NAME</label>
-        <input type="text" name="lastName" id="lastName">
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email">
-        <label for="phoneNum">PHONE NUMBER</label>
-        <input type="tel" name="phoneNum" id="phoneNum">
-        <label for="pass">PASSWORD</label>
-        <input type="password" name="pass" id="pass" required>
-        <label for="confirmPass">CONFIRM PASSWORD</label>
-        <input type="password" name="confirmPass" id="confirmPass" required>
+      <h2>Let's do this!</h2>
+      <form method="post">
+        <div class="row">
+          <div class="form-input">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" name="firstName" id="firstName">
+          </div>
+          <div class="form-input">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" name="lastName" id="lastName">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="form-input">
+            <label for="phoneNum">PHONE NUMBER</label>
+            <input type="tel" name="phoneNum" id="phoneNum">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-input">
+            <label for="pass">PASSWORD</label>
+            <input type="password" name="pass" id="pass" required>
+          </div>
+          <div class="form-input">
+            <label for="confirmPass">CONFIRM PASSWORD</label>
+            <input type="password" name="confirmPass" id="confirmPass" required>
+          </div>
+        </div>
       </form>
     </div>
     <div class="end-form">
@@ -42,6 +61,5 @@
       <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </div>
-  <script src="src/index.js"></script>
 </body>
 </html>

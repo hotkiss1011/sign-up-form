@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   display: flex;
   flex-direction: row;
@@ -5,24 +7,50 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
-  width: 50em;
+  background: url("../images/sidebar-img.jpg") -400px 0px/100vw 100vh;
+  display: flex;
+  width: 40%;
+  height: 100vh;
+  flex-direction: column;
   text-align: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  background: url("../images/sidebar-img.jpg") -300px 0px/80rem;
+  justify-content: center;
 }
 
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
 }
 
-.odin-logo {
+.caption {
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+a {
+  color: #F68702;
+}
+
+a:visited {
+  color: #adcc21
+}
+
+p {
+  padding: 15px;
+}
+
+.logo {
   width: 50px;
 }
 
@@ -30,6 +58,56 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 15px
+  width: 100vw;
 }
 
+h2 {
+  padding: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px grey, 0px -5px 5px grey;
+}
+
+form {
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 5px;
+}
+
+input {
+  border: 1px solid #adcc21;
+}
+
+button {
+  background-color: #07BAD1;
+  border: none;
+  color: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #15b7cc;
+}
+
+button:active {
+  background-color: #0b94a7;
+}
